@@ -1,0 +1,206 @@
+main {
+
+    .bg-circle-bottom {
+        @extend .bg-circle;
+        top: 100vh;
+        left: -9vh;
+    }
+
+    .bg-trace {
+        @include assets;
+        position: absolute;
+        top: 0;
+        left: -5vh;
+        z-index: -1;
+    }
+
+    .bg-path {
+        @include assets;
+        margin-top: 155px;
+
+        // --------------------------RESPONSIVE--------------------------
+        @media (min-width: 1934px) and (max-width: 2560px) {
+            transform: translateY(-10vh);
+            margin-top: 23vh;
+        }
+
+        @media (min-width: 1616px) and (max-width: 1912px) {
+            transform: translate(0vh, -9vh);
+            margin-top: 20vh;
+        }
+
+        @media (min-width: 1441px) and (max-width: 1615px) {
+            transform: translate(15vh, 0vh) scale(0.75);
+        }
+
+        @media (min-width: 1349px) and (max-width: 1440px) {
+            transform: translate(0vh, 0vh) scale(0.75);
+        }
+
+        @media (min-width: 1025px) and (max-width: 1343px) {
+            transform: translate(40vh, 9vh) scale(0.5);
+        }
+
+        @media (min-width: 1023px) and (max-width: 1024px) {
+            transform: translate(31vh, 9vh) scale(0.5);
+        }
+
+        @media (min-width: 769px) and (max-width: 1022px) {
+            transform: translate(47vh, 9vh) scale(0.5);
+        }
+
+        @media (min-width: 766px) and (max-width: 768px) {
+            transform: translate(39vh, 9vh) scale(0.5);
+        }
+
+        @media (min-width: 426px) and (max-width: 765px) {
+            transform: translate(54vh, 9vh) scale(0.5);
+        }
+
+        @media (min-width: 376px) and (max-width: 425px) {
+            transform: translate(88vh, 9vh) scale(0.5);
+        }
+
+        @media (max-width: 375px) {
+            transform: translate(90vh, 9vh) scale(0.5);
+        }
+    }
+
+    .bg-path-rotate {
+        @extend .bg-path;
+        transform: rotateX(-180deg) translateY(16.5vh);
+    }
+
+    .big-tree {
+        @include assets;
+        position: absolute;
+        top: 0;
+        margin-top: 392px;
+        padding-right: 44.1px;
+    }
+
+    .medium-tree {
+        @include assets;
+        position: absolute;
+        top: 0;
+        margin-top: 564.4px;
+        padding-right: 294.9px;
+    }
+
+    .small-tree {
+        @include assets;
+        position: absolute;
+        top: 866.6px;
+        padding-left: 643px;
+
+        &__top--shadow {
+            margin-top: 84.4px;
+        }
+
+        &__foot {
+            padding-left: $assets-pl;
+            margin-top: 120.3px;
+        }
+
+        &__foot--shadow {
+            padding-left: $assets-pl;
+            margin-top: 122.4px;
+        }
+    }
+
+    .children {
+        height: auto;
+        position: absolute;
+        top: 486px;
+        padding-left: 979px;
+        right: 179px;
+    }
+}
+
+section.approche-section {
+    h2 {
+        @include h2;
+        text-transform: uppercase;
+        width: 466px;
+        position: absolute;
+        top: -91vh;
+        left: 36vh;
+    }
+
+    p.quote {
+        @include paragraph;
+        width: max-content;
+        position: absolute;
+        top: -87vh;
+        left: -21vh;
+        margin-top: 59.8px;
+    }
+
+    .bloc-approche {
+        width: $bloc-width;
+        position: absolute;
+        top: $bloc-abso-top;
+        // left: 26vh;
+
+        h4 {
+            @include h4;
+        }
+    }
+
+    .bloc-paragraphe__approche {
+        @extend .bloc-approche;
+        top: $bloc-abso-top + 111px;
+
+        &--text {
+            @include paragraph;
+        }
+    }
+}
+
+section.infos-section {
+    button.hypnose {
+        margin-top: $btn-margin;
+        margin-bottom: $btn-margin;
+    }
+
+    .pictures-container {
+        margin-top: 104px;
+    }
+}
+
+section.newsletter-section {
+    .newsletter__container {
+        margin-top: 130px;
+
+        h3 {
+            @include h3;
+            text-transform: uppercase;
+        }
+    }
+
+    .newsletter-info__container {
+        &--text {
+            @include paragraph;
+            font-size: $text-size + 0.625rem;
+            margin-top: 34px;
+        }
+    }
+
+    .newsletter-form__container {
+        .form {
+            width: 100%;
+
+            & #formEmail {
+                width: 433px;
+                height: 56px;
+                border: 7px solid $color-yellow;
+                border-radius: 23px;
+                margin-top: 54px;
+            }
+        }
+
+        button {
+            margin-top: 50px;
+        }
+    }
+}

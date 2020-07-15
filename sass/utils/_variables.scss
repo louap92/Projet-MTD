@@ -1,0 +1,36 @@
+// Regular font family
+$font-stack: ('Roboto Regular', 'Roboto Medium', 'Roboto Black', 'Helvetica Neue', sans-serif) !default;
+
+// Text colors
+$head-color: rgb(19, 58, 80);
+$text-color: rgb(60, 104, 129);
+$nav-color: rgb(112, 112, 112);
+
+// Button colors
+$btn-cta-color: linear-gradient(90deg, rgba(255, 215, 29, 1) 0%, rgba(254, 178, 0, 1) 100%);
+$btn-contact-color: linear-gradient(90deg, rgba(65, 237, 169, 1) 0%, rgba(77, 97, 145, 1) 100%);
+
+// Yellow
+$color-yellow: rgb(255, 215, 29);
+
+// Background color
+$bg-light-blue: rgb(224, 255, 243);
+
+// Font size
+$head-size: 3.75rem;
+$h3-size: 2.813rem;
+$h4-size: 2.5rem;
+$text-size: 1.563rem;
+
+// Padding
+$assets-pl: 70.9px;
+
+// Margin
+$btn-margin: 43px;
+
+// Box shadow
+$btn-shadow: 7px 7px 5px 0px;
+
+// Others
+$bloc-abso-top: 1539px;
+$bloc-width: 100%;

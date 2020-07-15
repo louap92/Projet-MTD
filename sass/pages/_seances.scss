@@ -1,0 +1,51 @@
+.seancesMain {
+    .hypno-description-h5 {
+        @include h5;
+        font-size: 1.875rem;
+        margin-top: 66px;
+    }
+
+    .hypno-description-h5--second {
+        @extend .hypno-description-h5;
+        font-family: nth($font-stack, 2);
+    }
+
+    .seances-objectifs__container {
+        margin-top: 66px;
+
+        .seances-objectifs-description {
+            font-family: nth($font-stack, 1);
+            font-size: 1.875rem;
+            color: $head-color;
+        }
+    }
+
+    .seances-accompagnement__container {
+        h2 {
+            @include h2;
+            text-transform: uppercase;
+            margin-top: 121px;
+        }
+
+        .bloc-seances {
+            margin-top: 50px;
+
+            p.quote {
+                @include paragraph;
+            }
+
+            .bloc-seances--description.seances-mt {
+                margin-top: 96px;
+            }
+
+            &--description {
+                @include paragraph;
+            }
+
+            &--title {
+                @include h5;
+                margin-top: 50px;
+            }
+        }
+    }
+}

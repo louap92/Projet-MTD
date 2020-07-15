@@ -1,0 +1,42 @@
+.contactForm {
+    width: 50%;
+
+    & input {
+        width: 583px;
+        height: 56px;
+        border: 7px solid $color-yellow;
+        border-radius: 23px;
+        margin-top: 42px;
+    }
+
+    & textarea {
+        width: 583px;
+        height: 277px;
+        border: 7px solid $color-yellow;
+        border-radius: 23px;
+        margin-top: 48px;
+    }
+
+    button {
+        width: 192px;
+        margin-top: 60px;
+    }
+
+    sup {
+        width: 36px;
+        height: 37px;
+        font-family: nth($font-stack, 3);
+        font-size: 2.188rem;
+        color: #000000;
+        opacity: 0.57;
+        margin-top: 5vh;
+    }
+
+    a {
+        width: 192px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

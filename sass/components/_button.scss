@@ -1,0 +1,22 @@
+.btn {
+    @include btn;
+}
+
+.btn-contact {
+    @extend .btn;
+    width: 300px;
+    background: $btn-contact-color;
+    border: 0px solid rgb(112, 112, 112);
+    -webkit-box-shadow: $btn-shadow rgba(77, 97, 145, 0.16);
+    -moz-box-shadow: $btn-shadow rgba(77, 97, 145, 0.16);
+    box-shadow: $btn-shadow rgba(77, 97, 145, 0.16);
+}
+
+.btn-cta {
+    @extend .btn;
+    background: $btn-cta-color;
+    border: 0px solid rgb(112, 112, 112);
+    -webkit-box-shadow: $btn-shadow rgba(254, 178, 0, 0.16);
+    -moz-box-shadow: $btn-shadow rgba(254, 178, 0, 0.16);
+    box-shadow: $btn-shadow rgba(254, 178, 0, 0.16);
+}

@@ -1,0 +1,33 @@
+.navbar {
+    .navbar-brand {
+        width: 100%;
+
+        h1 {
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.navbar-collapse {
+    width: 80%;
+
+    .navbar-nav {
+        .nav-item {
+            margin-right: 60px;
+
+            .nav-link {
+                @include nav-link;
+            }
+        }
+
+        .nav-item--blog {
+            margin-right: 23px;
+
+            .nav-link {
+                @include nav-link;
+            }
+        }
+    }
+}

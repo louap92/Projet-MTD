@@ -1,0 +1,49 @@
+.sophroMain {
+    .blue-box.sophro {
+        @include bluebox;
+        height: 931px;
+
+        .parcours__container {
+            margin-left: 63.5px;
+            margin-right: 62.5px;
+        }
+    }
+
+    .sophro-trait {
+        width: 216px;
+        border: 5px solid #707070;
+        border-radius: 10px;
+        transform: translateY(-5vh);
+    }
+
+    .moyens-sophro__container {
+        .bloc-trio__sophro {
+            width: 432px;
+            height: 412px;
+            border: 14px solid #133A50;
+            border-radius: 10px;
+
+            &--title {
+                @include h5;
+                text-transform: uppercase;
+                margin-top: 39px;
+            }
+
+            &--description {
+                @include paragraph;
+            }
+        }
+    }
+
+    .blue-box.sophro--indications {
+        @extend .blue-box;
+
+        .main-indications__container {
+            margin: 68px 110px 22px 80px;
+
+            .main-indications--title {
+                @include h5;
+            }
+        }
+    }
+}

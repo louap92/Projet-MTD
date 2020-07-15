@@ -1,0 +1,50 @@
+.footer {
+    width: 100%;
+    height: 281px;
+    background-color: $bg-light-blue;
+    margin: 0 auto;
+    margin-top: 159px;
+
+    .footer__logo {
+        width: 250px;
+        display: block;
+
+    }
+
+    .footer__infos {
+        width: inherit;
+
+        &-legales {
+            @include paragraph;
+            font-size: 1.875rem;
+            color: #000000;
+        }
+
+        &-legales--title {
+            @include paragraph;
+            font-size: $text-size + 0.625rem;
+            margin-top: 35px;
+            color: #000000;
+        }
+
+        &-legales--cgv {
+            @extend .footer__infos-legales;
+            text-transform: uppercase;
+        }
+    }
+
+    .footer__socials {
+        display: block;
+
+            & a img {
+                max-width: 80px;
+                max-height: 80px;
+            }
+
+        .social__container--credits {
+            @include paragraph;
+            font-size: $text-size + 0.625rem;
+            color: #000000;
+        }
+    }
+}

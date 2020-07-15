@@ -1,0 +1,74 @@
+.contactMain {
+    .box__container.contact {
+        margin-top: 25vh;
+
+        .message-send {
+            font-family: nth($font-stack, 3);
+            font-size: 2.188rem;
+            color: #3C6881;
+            opacity: 0.57;
+        }
+
+        .send-mt {
+            margin-top: 50px;
+        }
+
+        .message-send-number {
+            font-family: nth($font-stack, 3);
+            font-size: 2.188rem;
+            color: #3C6881;
+            text-decoration: underline;
+        }
+    }
+
+    .sophro-trait {
+        width: 216px;
+        border: 5px solid #707070;
+        border-radius: 10px;
+        transform: translateY(-5vh);
+    }
+
+    .contact-infos__container {
+        h2 {
+            @include h2;
+            text-transform: uppercase;
+            margin-top: 202px;
+        }
+
+        .bloc-seances {
+            margin-top: 50px;
+
+            p.quote {
+                @include paragraph;
+            }
+
+            .bloc-seances--description.seances-mt {
+                margin-top: 96px;
+            }
+
+            &--description {
+                @include paragraph;
+
+                & strong {
+                    @include h5;
+                }
+            }
+
+            .form {
+                width: 100%;
+
+                & #formEmail {
+                    width: 433px;
+                    height: 56px;
+                    border: 7px solid $color-yellow;
+                    border-radius: 23px;
+                    margin-top: 54px;
+                }
+            }
+        }
+
+        img {
+            margin-top: 79px;
+        }
+    }
+}

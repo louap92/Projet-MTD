@@ -1,0 +1,49 @@
+.hypnoseMain {
+    .blue-box.hypnose {
+        @extend .blue-box;
+
+        .parcours__container {
+            margin-left: 63.5px;
+            margin-right: 62.5px;
+
+            .hypno-description-h5 {
+                @include h5;
+            }
+        }
+    }
+
+    .chiffres-hypno__container {
+        margin-top: 110px;
+
+        h4 {
+            @include h4;
+            color: $head-color;
+            text-transform: uppercase;
+        }
+
+        .bloc-chiffres {
+            width: 866px;
+            height: 319px;
+            border: 14px solid #133A50;
+            border-radius: 10px;
+            margin-top: 46px;
+
+            &--title {
+                @include h5;
+                margin-top: 37px;
+            }
+
+            &--description {
+                @include paragraph;
+            }
+        }
+    }
+
+    .main-indications__container {
+        margin: 68px 110px 22px 80px;
+
+        .main-indications--title {
+            @include h5;
+        }
+    }
+}

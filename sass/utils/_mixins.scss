@@ -1,0 +1,74 @@
+// Nav menu text
+@mixin nav-link {
+    font-family: nth($font-stack, 4);
+    font-size: 2.25rem;
+    color: $nav-color;
+    text-transform: capitalize;
+}
+
+// Button
+@mixin btn {
+    height: 80px;
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-family: nth($font-stack, 2);
+    font-size: 2.25rem;
+}
+
+// Width & height of assets
+@mixin assets($width: 100%, $height: auto) {
+    width: $width;
+    height: $height;
+}
+
+// Card
+@mixin card {
+    height: 480.77px;
+    width: 65vh;
+    position: absolute;
+    top: 285.2px;
+    left: 371px;
+    border: none;
+}
+
+// h2
+@mixin h2 {
+    font-family: nth($font-stack, 3);
+    font-size: $head-size;
+    color: $head-color;
+}
+
+// h3
+@mixin h3 {
+    font-family: nth($font-stack, 1);
+    font-size: $h3-size;
+    color: $text-color;
+}
+
+// h4
+@mixin h4 {
+    font-family: nth($font-stack, 1);
+    font-size: $h4-size;
+    color: $text-color;
+}
+
+// h5
+@mixin h5 {
+    font-family: nth($font-stack, 3);
+    font-size: $text-size;
+    color: $text-color;
+}
+
+// <p>
+@mixin paragraph {
+    font-family: nth($font-stack, 1);
+    font-size: $text-size;
+    color: $text-color;
+}
+
+// bluebox component
+@mixin bluebox {
+    width: inherit;
+    background-color: $bg-light-blue;
+    margin: 233px 75px 0px 75px;
+}

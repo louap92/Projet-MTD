@@ -1,0 +1,18 @@
+.card {
+    @include card;
+
+    .card-body {
+
+        h2.card-title {
+            @include h2;
+        }
+
+        p.card-text {
+            @include paragraph;
+        }
+
+        button {
+            width: 386px;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+main {
+
+    .blue-box {
+        @include bluebox;
+
+        h2 {
+            @include h2;
+            text-transform: uppercase;
+            margin-top: 23.2px;
+        }
+
+        .quote {
+            @include paragraph;
+            margin-top: 17.8px;
+        }
+
+        .parcours__container {
+            margin-top: 75px;
+
+            .big-quote {
+                @extend .quote;
+            }
+        }
+
+    }
+
+    .box__container {
+        @extend .blue-box;
+        margin: 92.2px 75px 97px 75px;
+
+        h2 {
+            margin-bottom: 87.8px;
+        }
+    }
+}
